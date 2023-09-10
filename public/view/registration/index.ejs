@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Sbidu - Bid And Auction HTML Template</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/css/owl.min.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/flaticon.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="shortcut icon" href="https://astraapplications.com/wp-content/uploads/2023/01/cropped-Astra-Icon-2-Color-32x32.png" type="image/x-icon">
+
+    <script src="<%= process.env.AWT_HOSTNAME %>assets/javascript/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!--============= ScrollToTop Section Starts Here =============-->
+    <div class="overlayer" id="overlayer">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    <a href="#0" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+    <div class="overlay"></div>
+    <!--============= ScrollToTop Section Ends Here =============-->
+
+
+    <!--============= Header Section Starts Here =============-->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <ul class="customer-support">
+                        <li>
+                            <a href="#0" class="mr-3"><i class="fas fa-phone-alt"></i><span class="ml-2 d-none d-sm-inline-block">Customer Support Hotline : +63 926 733 2616</span></a>
+                        </li>
+                    </ul>
+                    <ul class="cart-button-area">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="https://astraapplications.com/wp-content/uploads/2023/01/astra-logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--============= Header Section Ends Here =============-->
+
+
+    <!--============= Hero Section Starts Here =============-->
+    <div class="hero-section">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a ref="#" onclick="goToHomePage()">Home</a>
+                </li>
+                <li>
+                    <span>Registration</span>
+                </li>
+            </ul>
+        </div>
+        <div class="bg_img hero-bg bottom_center" data-background="./assets/images/banner/hero-bg.png"></div>
+    </div>
+    <!--============= Hero Section Ends Here =============-->
+
+
+    <!--============= Account Section Starts Here =============-->
+    <section class="account-section padding-bottom">
+        <div class="container">
+            <div class="account-wrapper mt--100 mt-lg--440">
+                <div class="left-side">
+                    <div class="section-header">
+                        <h2 class="title">Registration</h2>
+                        <p>We're happy you're here!</p>
+                    </div>
+                    <ul class="login-with">
+                        <li>
+                            <a href="#0"><i class="fab fa-facebook"></i>Log in with Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-google-plus"></i>Log in with Google</a>
+                        </li>
+                    </ul>
+                    <div class="or">
+                        <span>Or</span>
+                    </div>
+                    <!-- <form class="login-form"> -->
+                    <form action="javascript:void(0);" class="login-form" method="POST" id="registrtationForm"
+                name="registrtationForm" enctype="multipart/form-data" accept-charset="utf-8">
+                        <div class="form-group mb-30">
+                            <label for="fullName"><i class="far fa-user"></i></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+                        </div>
+                        <div class="form-group mb-30">
+                            <label for="contactNumber"><i class="fa fa-mobile"></i></label>
+                            <input type="text" id="contactNumber" name="contactNumber" placeholder="Contact Number"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
+                        </div>
+                        <div class="form-group mb-30">
+                            <label for="emailAddress"><i class="far fa-envelope"></i></label>
+                            <input type="text" id="emailAddress" name="emailAddress" placeholder="Email Address">
+                        </div>
+                        <div class="form-group mb-30">
+                            <label for="password"><i class="fas fa-lock"></i></label>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                            <span class="pass-type"><i class="fas fa-eye"></i></span>
+                        </div>
+                        <div class="form-group mb-30">
+                            <label for="confirmPassword"><i class="fas fa-lock"></i></label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group checkgroup mb-30">
+                            <input type="checkbox" id="agreeInTermsAndConditions" name="agreeInTermsAndConditions">
+                            <label for="check">The Car Auctions Terms of Use apply</label>
+                        </div>
+                        <div class="form-group mb-0">
+                            <button type="submit" class="custom-button" id="btnRegistration">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-side cl-white">
+                    <div class="section-header mb-0">
+                        <h3 class="title mt-0">ALREADY HAVE AN ACCOUNT?</h3>
+                        <a href="#" onclick="goToLogin()" class="custom-button transparent">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Account Section Ends Here =============-->
+
+
+   
+
+
+
+    <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+    <script src="<%= process.env.WEBSITE_HOSTNAME %>/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/modernizr-3.6.0.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/waypoints.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
+    <script src="./assets/js/counterup.min.js"></script>
+    <script src="./assets/js/owl.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/yscountdown.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="<%= process.env.AWT_HOSTNAME %>assets/javascript/registration.js"></script>
+
+
+    <script >
+    function goToHomePage() {
+        location.replace(host + '/');
+    }
+
+    function goToLogin() {
+        location.replace(host + '/login');
+    }
+
+    function goToRegistration() {
+        location.replace(host + '/registration');
+    }
+    </script>
+</body>
+
+</html>

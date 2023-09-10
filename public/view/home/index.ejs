@@ -1,0 +1,168 @@
+<%- include('../includes/head/index.ejs') %>
+
+
+
+<body>
+    <!--============= ScrollToTop Section Starts Here =============-->
+    <div class="overlayer" id="overlayer">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    <a href="#0" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+    <div class="overlay"></div>
+    <!--============= ScrollToTop Section Ends Here =============-->
+
+
+    <!--============= Header Section Starts Here =============-->
+    <%- include('../includes/header/index.ejs') %>
+    <!--============= Header Section Ends Here =============-->
+
+    <!--============= Cart Section Starts Here =============-->
+    <div class="cart-sidebar-area">
+        <div class="top-content">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo/logo2.png" alt="logo">
+            </a>
+            <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="bottom-content">
+            <div class="cart-products">
+                <h4 class="title">Shopping cart</h4>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <a href="#0"><img src="assets/images/shop/shop01.jpg" alt="shop"></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title"><a href="#0">Color Pencil</a></h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <a href="#0"><img src="assets/images/shop/shop02.jpg" alt="shop"></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title"><a href="#0">Water Pot</a></h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <a href="#0"><img src="assets/images/shop/shop03.jpg" alt="shop"></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title"><a href="#0">Art Paper</a></h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <a href="#0"><img src="assets/images/shop/shop04.jpg" alt="shop"></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title"><a href="#0">Stop Watch</a></h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <a href="#0"><img src="assets/images/shop/shop05.jpg" alt="shop"></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title"><a href="#0">Comics Book</a></h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="btn-wrapper text-center">
+                    <a href="#0" class="custom-button"><span>Checkout</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= Cart Section Ends Here =============-->
+
+
+    <!--============= Banner Section Starts Here =============-->
+    <section class="banner-section bg_img" data-background="<%= process.env.WEBSITE_HOSTNAME %>assets/images/banner/banner-bg-1.png">
+
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="banner-content cl-white">
+                        <h5 class="cate">Next Generation Auction</h5>
+                        <h1 class="title"><span class="d-xl-block">Find Your</span> Next Deal!</h1>
+                        <p>
+                            Online Auction is where everyone goes to shop, sell,and give, while discovering variety and affordability.
+                        </p>
+                        <a href="#0" class="custom-button yellow btn-large">Get Started</a>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-6">
+                    <div class="banner-thumb-2">
+                        <img src="./assets/images/banner/banner-1.png" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-shape d-none d-lg-block">
+            <img src="./assets/css/img/banner-shape.png" alt="css">
+        </div>
+    </section>
+    <!--============= Banner Section Ends Here =============-->
+
+
+   
+
+
+  
+
+
+
+
+
+   
+
+
+
+
+
+
+  
+
+
+
+
+
+   
+
+
+    
+
+
+
+
+    <!-- <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/modernizr-3.6.0.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/waypoints.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
+    <script src="./assets/js/counterup.min.js"></script>
+    <script src="./assets/js/owl.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/yscountdown.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html> -->
+
+<%- include('../includes/scripts/index.ejs') %>
