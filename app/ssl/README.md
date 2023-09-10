@@ -1,6 +1,4 @@
-## Expose MiroTalk on HTTPS
-
-![mirotalk-https](https.png)
+## Expose on HTTPS
 
 1. Generate a `self-signed certificate`
 
