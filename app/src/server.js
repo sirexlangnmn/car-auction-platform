@@ -214,16 +214,6 @@ app.get(['/'], (req, res) => {
     }
 });
 
-// app.get(['/login'], (req, res) => {
-//     const sessionData = {
-//         ourGenerateNonce: lodashNonce,
-//     };
-
-//     res.render(path.join(__dirname, '../../', 'public/view/login/index'), {
-//         data: sessionData,
-//     });
-// });
-
 app.get(['/listing'], (req, res) => {
     // res.render(path.join(__dirname, '../../', 'public/view/listing/index'));
     if (req.session.user === undefined) {
